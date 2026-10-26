@@ -256,6 +256,30 @@
   .wx .wx-tx{flex:1 1 200px;min-width:0}
   .wx .wx-tx b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px}
   .wx .wx-tx span{display:block;font-size:13px;color:var(--ink-2);line-height:1.8}
+
+  /* 教学经验 / 提分路径 */
+  .exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .case{
+    margin-top:16px;padding:18px 20px;border-radius:14px;
+    border:1px solid rgba(140,220,255,.13);
+    background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));
+  }
+  .case-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .case-top b{font-size:15px;color:var(--ink)}
+  .case-tag{
+    font-size:11px;letter-spacing:.4px;padding:2px 9px;border-radius:999px;
+    background:var(--accent-soft);color:var(--accent-deep);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .case-rows{display:grid;gap:10px;margin:0}
+  .case-row{display:flex;gap:12px;font-size:14px}
+  .case-row dt{flex:0 0 60px;margin:0;color:var(--ink-3)}
+  .case-row dd{margin:0;flex:1;min-width:0;color:var(--ink-2)}
+  .case-foot{margin-top:12px;font-size:12.5px;color:var(--ink-3);line-height:1.8}
+  @media (max-width:560px){
+    .case-row{flex-direction:column;gap:2px}
+    .case-row dt{flex:0 0 auto}
+  }
 </style>
 </head>
 <body>
@@ -296,7 +320,14 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">03</span><h2>擅长板块</h2></div>
+    <div class="sec-head"><span class="sec-no">03</span><h2>教学经验与提分路径</h2></div>
+    <p class="sec-sub">数学提分不靠刷题量，靠把失分点按类型拆开、逐个消掉。</p>
+    <div class="exp-grid"><div class="card"><h3>题型化归纳</h3><p>每章归结为 5～8 类典型题，每类给出固定步骤。遇到新题先判断属于哪一类，再套对应流程，减少「看着眼熟但不会下手」。</p></div><div class="card"><h3>计算与书写规范</h3><p>从第一步书写到最后检查，专治「会做却算错」。这部分分数最好拿，也最容易被丢掉。</p></div><div class="card"><h3>错题按错因归类</h3><p>概念不清、方法不熟、计算失误分开放。同一类错误只补一次，避免错题本变成抄题本。</p></div></div>
+    <div class="case"><div class="case-top"><b>典型提分路径</b><span class="case-tag">路径示意</span></div><dl class="case-rows"><div class="case-row"><dt>起点</dt><dd>初三，一模 72 分（120 分制），二次函数与几何证明几乎空白。</dd></div><div class="case-row"><dt>诊断</dt><dd>函数题是「不会把条件转化成图像和不等式」，几何是「不知道往哪连辅助线」。</dd></div><div class="case-row"><dt>做法</dt><dd>先用两次课把一次函数到二次函数的图像与性质打通；几何按三类辅助线套路（中点、角平分线、垂直）逐个练。每周一次 30 分钟小测，只测上周内容。</dd></div><div class="case-row"><dt>结果形态</dt><dd>中档题正确率明显上来，通常 6～8 周后能稳定在 90 分上下。</dd></div></dl><div class="case-foot">以上为常见提升路径示意，用于说明方法与节奏，不是某位特定学员的记录；实际提分幅度取决于基础、投入与考试难度。</div></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-no">04</span><h2>擅长板块</h2></div>
     <p class="sec-sub">初中打基础、高中攻难点，按学段与题型拆分。</p>
         <div class="card" style="margin-bottom:14px">
           <div class="topic-head"><h3>初中数学</h3><em>JUNIOR</em></div>
@@ -311,19 +342,19 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">04</span><h2>教学流程</h2></div>
+    <div class="sec-head"><span class="sec-no">05</span><h2>教学流程</h2></div>
     <p class="sec-sub">先摸底、再定计划、分阶段突破，每一段都有可检验的结果。</p>
     <ol class="steps"><li><h3>摸底测评</h3><p>第一次课先测评，明确基础、失分点与目标。</p></li><li><h3>专属计划</h3><p>依据测评结果定计划，拆成可执行的阶段。</p></li><li><h3>专项突破</h3><p>每阶段主攻一个模块，配课后练习与复盘。</p></li><li><h3>小测调整</h3><p>定期小测检验效果，动态调整进度与难度。</p></li><li><h3>考前冲刺</h3><p>集中冲刺高频考点与易错题型，把分稳住。</p></li></ol>
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">05</span><h2>配套资料</h2></div>
+    <div class="sec-head"><span class="sec-no">06</span><h2>配套资料</h2></div>
     <p class="sec-sub">不依赖临时找题，讲义、题库、错题本成套使用。</p>
     <div class="grid"><div class="card"><h3>自编分章节讲义</h3><p>按章节整理知识点与常用结论，课堂与课后共用同一份材料。</p></div><div class="card"><h3>题型专项题库</h3><p>选择、填空、解答按题型分类整理，配详细解析。</p></div><div class="card"><h3>错题本与真题汇编</h3><p>提供错题本模板，配合历年真题按薄弱点反复强化。</p></div></div>
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">06</span><h2>荣誉</h2></div>
+    <div class="sec-head"><span class="sec-no">07</span><h2>荣誉</h2></div>
     <p class="sec-sub">除学科教学能力外，也参与学科外的科技创新实践并取得成绩。</p>
     <div class="honor">
       <span class="badge">省赛一等奖</span>
@@ -338,7 +369,7 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">07</span><h2>联系方式</h2></div>
+    <div class="sec-head"><span class="sec-no">08</span><h2>联系方式</h2></div>
     <p class="sec-sub">可预约试课：先做一次摸底，看看问题出在哪，再决定怎么补。</p>
     <div class="contact">
       <div class="card"><h3>电话</h3><p><a href="tel:18856170269">188 5617 0269</a></p></div>
