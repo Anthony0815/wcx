@@ -256,6 +256,30 @@
   .wx .wx-tx{flex:1 1 200px;min-width:0}
   .wx .wx-tx b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px}
   .wx .wx-tx span{display:block;font-size:13px;color:var(--ink-2);line-height:1.8}
+
+  /* 教学经验 / 提分路径 */
+  .exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .case{
+    margin-top:16px;padding:18px 20px;border-radius:14px;
+    border:1px solid rgba(140,220,255,.13);
+    background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));
+  }
+  .case-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .case-top b{font-size:15px;color:var(--ink)}
+  .case-tag{
+    font-size:11px;letter-spacing:.4px;padding:2px 9px;border-radius:999px;
+    background:var(--accent-soft);color:var(--accent-deep);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .case-rows{display:grid;gap:10px;margin:0}
+  .case-row{display:flex;gap:12px;font-size:14px}
+  .case-row dt{flex:0 0 60px;margin:0;color:var(--ink-3)}
+  .case-row dd{margin:0;flex:1;min-width:0;color:var(--ink-2)}
+  .case-foot{margin-top:12px;font-size:12.5px;color:var(--ink-3);line-height:1.8}
+  @media (max-width:560px){
+    .case-row{flex-direction:column;gap:2px}
+    .case-row dt{flex:0 0 auto}
+  }
 </style>
 </head>
 <body>
@@ -318,7 +342,14 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">01</span><h2>共同的教学方式</h2></div>
+    <div class="sec-head"><span class="sec-no">01</span><h2>教学经验与提分路径</h2></div>
+    <p class="sec-sub">四个学科用的是同一套流程：先量化失分，再按类型补，最后用小测验证。</p>
+    <div class="exp-grid"><div class="card"><h3>先量化再教</h3><p>第一次课做测评，把「哪里丢分」写成清单，而不是凭感觉说基础差。</p></div><div class="card"><h3>按类型补，不按页数补</h3><p>概念、方法、计算分开处理；每类只补一次，避免重复劳动。</p></div><div class="card"><h3>用小测验证</h3><p>每周一次小测，只测上周内容。分数不动就说明方法不对，及时调整。</p></div></div>
+    <div class="case"><div class="case-top"><b>典型提分路径（理科通用）</b><span class="case-tag">路径示意</span></div><dl class="case-rows"><div class="case-row"><dt>起点</dt><dd>基础 60 分上下的学生，常见表现是：基础题会做但不敢保证，中档题时对时错，难题直接放弃。</dd></div><div class="case-row"><dt>诊断</dt><dd>不是完全不会，而是缺一套固定的做题流程，导致会做的分也拿不稳。</dd></div><div class="case-row"><dt>做法</dt><dd>先锁定中档题作为主攻方向，把每类题的步骤固定下来；难题只保留第一问；每次课用小测验证上周内容。</dd></div><div class="case-row"><dt>结果形态</dt><dd>中档题正确率上来之后，卷面通常整体上移 10～20 分。</dd></div></dl><div class="case-foot">以上为常见提升路径示意，用于说明方法与节奏，不是某位特定学员的记录；实际提分幅度取决于基础、投入与考试难度。</div></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-no">02</span><h2>共同的教学方式</h2></div>
     <p class="sec-sub">不论哪个学科，流程一致：先摸底、再定计划、分阶段突破。</p>
     <ol class="steps">
       <li><h3>摸底测评</h3><p>第一次课先测评，明确基础、失分点与目标。</p></li>
@@ -330,7 +361,7 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">02</span><h2>授课信息</h2></div>
+    <div class="sec-head"><span class="sec-no">03</span><h2>授课信息</h2></div>
     <dl class="facts">
       <div class="fact"><dt>院校</dt><dd>大连大学 · 软件工程学院（本科在读）</dd></div>
       <div class="fact"><dt>经历</dt><dd>远兮教育集团 · 兼职授课老师</dd></div>
@@ -342,7 +373,7 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">03</span><h2>联系方式</h2></div>
+    <div class="sec-head"><span class="sec-no">04</span><h2>联系方式</h2></div>
     <p class="sec-sub">可预约试课：先做一次摸底，看看问题出在哪，再决定怎么补。</p>
     <div class="contact">
       <div class="card"><h3>电话</h3><p><a href="tel:18856170269">188 5617 0269</a></p></div>
