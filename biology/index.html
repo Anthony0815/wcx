@@ -256,6 +256,30 @@
   .wx .wx-tx{flex:1 1 200px;min-width:0}
   .wx .wx-tx b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px}
   .wx .wx-tx span{display:block;font-size:13px;color:var(--ink-2);line-height:1.8}
+
+  /* 教学经验 / 提分路径 */
+  .exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .case{
+    margin-top:16px;padding:18px 20px;border-radius:14px;
+    border:1px solid rgba(140,220,255,.13);
+    background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));
+  }
+  .case-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .case-top b{font-size:15px;color:var(--ink)}
+  .case-tag{
+    font-size:11px;letter-spacing:.4px;padding:2px 9px;border-radius:999px;
+    background:var(--accent-soft);color:var(--accent-deep);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .case-rows{display:grid;gap:10px;margin:0}
+  .case-row{display:flex;gap:12px;font-size:14px}
+  .case-row dt{flex:0 0 60px;margin:0;color:var(--ink-3)}
+  .case-row dd{margin:0;flex:1;min-width:0;color:var(--ink-2)}
+  .case-foot{margin-top:12px;font-size:12.5px;color:var(--ink-3);line-height:1.8}
+  @media (max-width:560px){
+    .case-row{flex-direction:column;gap:2px}
+    .case-row dt{flex:0 0 auto}
+  }
 </style>
 </head>
 <body>
@@ -296,7 +320,14 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">03</span><h2>擅长板块</h2></div>
+    <div class="sec-head"><span class="sec-no">03</span><h2>教学经验与提分路径</h2></div>
+    <p class="sec-sub">生物看起来背得多，丢分往往在概念边界不清和表述不规范。</p>
+    <div class="exp-grid"><div class="card"><h3>概念连成链</h3><p>按「分子—细胞—个体—群体」的因果顺序串起来，减少孤立记忆。</p></div><div class="card"><h3>图表题读变量</h3><p>先看横纵坐标和变量关系，再判断趋势，不靠语感。</p></div><div class="card"><h3>表述用教材术语</h3><p>主观题丢分大多是「意思对了但不得分」，术语和规范表述要专门练。</p></div></div>
+    <div class="case"><div class="case-top"><b>典型提分路径</b><span class="case-tag">路径示意</span></div><dl class="case-rows"><div class="case-row"><dt>起点</dt><dd>高二，月考 61 分（100 分制），选择题错在概念混淆，主观题写得很少。</dd></div><div class="case-row"><dt>诊断</dt><dd>概念边界不清，答题缺关键词。</dd></div><div class="case-row"><dt>做法</dt><dd>按章节重做概念链梳理；图表题与实验设计题分开专项；每次课用 10 分钟背写关键术语。</dd></div><div class="case-row"><dt>结果形态</dt><dd>选择题错误明显减少，通常 8 次课后到 75 分上下。</dd></div></dl><div class="case-foot">以上为常见提升路径示意，用于说明方法与节奏，不是某位特定学员的记录；实际提分幅度取决于基础、投入与考试难度。</div></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-no">04</span><h2>擅长板块</h2></div>
     <p class="sec-sub">初中建概念、高中攻机制，按学段与题型拆分。</p>
         <div class="card" style="margin-bottom:14px">
           <div class="topic-head"><h3>初中生物</h3><em>JUNIOR</em></div>
@@ -311,19 +342,19 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">04</span><h2>教学流程</h2></div>
+    <div class="sec-head"><span class="sec-no">05</span><h2>教学流程</h2></div>
     <p class="sec-sub">先摸底、再定计划、分阶段突破，每一段都有可检验的结果。</p>
     <ol class="steps"><li><h3>摸底测评</h3><p>第一次课先测评，明确基础、失分点与目标。</p></li><li><h3>专属计划</h3><p>依据测评结果定计划，拆成可执行的阶段。</p></li><li><h3>专项突破</h3><p>每阶段主攻一个模块，配课后练习与复盘。</p></li><li><h3>小测调整</h3><p>定期小测检验效果，动态调整进度与难度。</p></li><li><h3>考前冲刺</h3><p>集中冲刺高频考点与易错题型，把分稳住。</p></li></ol>
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">05</span><h2>配套资料</h2></div>
+    <div class="sec-head"><span class="sec-no">06</span><h2>配套资料</h2></div>
     <p class="sec-sub">不依赖临时找题，讲义、题库、错题本成套使用。</p>
     <div class="grid"><div class="card"><h3>自编分章节讲义</h3><p>按章节整理概念链、流程图与关键术语，课堂与课后共用同一份材料。</p></div><div class="card"><h3>题型专项题库</h3><p>选择、图表、实验设计分类整理，配详细解析与答题模板。</p></div><div class="card"><h3>错题本与真题汇编</h3><p>提供错题本模板，配合历年真题按薄弱点反复强化。</p></div></div>
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">06</span><h2>荣誉</h2></div>
+    <div class="sec-head"><span class="sec-no">07</span><h2>荣誉</h2></div>
     <p class="sec-sub">除学科教学能力外，也参与学科外的科技创新实践并取得成绩。</p>
     <div class="honor">
       <span class="badge">省赛一等奖</span>
@@ -338,7 +369,7 @@
   </section>
 
   <section>
-    <div class="sec-head"><span class="sec-no">07</span><h2>联系方式</h2></div>
+    <div class="sec-head"><span class="sec-no">08</span><h2>联系方式</h2></div>
     <p class="sec-sub">可预约试课：先做一次摸底，看看问题出在哪，再决定怎么补。</p>
     <div class="contact">
       <div class="card"><h3>电话</h3><p><a href="tel:18856170269">188 5617 0269</a></p></div>
