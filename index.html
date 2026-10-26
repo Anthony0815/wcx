@@ -240,6 +240,22 @@
   @media (prefers-reduced-motion: reduce){
     body,body::before,body::after{animation:none !important}
   }
+
+  /* 微信二维码 */
+  .wx{
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    margin-top:18px;padding:16px 18px;
+    border:1px solid rgba(140,220,255,.13);border-radius:14px;
+    background:rgba(255,255,255,.035);
+  }
+  .wx img{
+    width:112px;height:112px;flex:0 0 112px;
+    border-radius:10px;background:#fff;padding:6px;
+    box-shadow:0 6px 20px rgba(0,0,0,.35);
+  }
+  .wx .wx-tx{flex:1 1 200px;min-width:0}
+  .wx .wx-tx b{display:block;font-size:15px;color:var(--ink);margin-bottom:6px}
+  .wx .wx-tx span{display:block;font-size:13px;color:var(--ink-2);line-height:1.8}
 </style>
 </head>
 <body>
@@ -266,7 +282,7 @@
         <li>线上 · 大连线下</li>
         <li>可试课</li>
       </ul>
-      <a class="hero-link" href="https://anthony0815.github.io/" target="_blank">查看完整家教主页 →</a>
+
     </div>
   </header>
 
@@ -333,6 +349,13 @@
       <div class="card"><h3>授课范围</h3><p>线上 · 大连本地</p></div>
       <div class="card"><h3>可约时间</h3><p>时间稳定 · 可长期</p></div>
       <div class="card"><h3>试课</h3><p>支持预约试课</p></div>
+    </div>
+    <div class="wx">
+      <img src="/wcx/wechat-qr.png" alt="微信二维码：扫码添加好友预约试课" loading="lazy">
+      <div class="wx-tx">
+        <b>微信</b>
+        <span>扫码添加好友 · 预约试课<br>手机可长按识别，或截图后用微信「扫一扫」</span>
+      </div>
     </div>
     <a class="btn" href="tel:18856170269">打电话预约</a>
   </section>
